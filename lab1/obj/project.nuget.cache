@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "yRnugrbvW9fufbDIZgbDqog3TbCjgJ4iQwzWw/uaEY7r2U61sIZ/VCJJCBTYe9vHmo8R0tdU9aUyFsioYWl58A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Anna\\RiderProjects\\PDC\\lab1\\lab1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anna\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\system.servicemodel.primitives.4.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}

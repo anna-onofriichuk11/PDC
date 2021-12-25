@@ -61,9 +61,8 @@ namespace lab1.Task2
             }
         }
 
-        public void Remove(T elem)
+        public bool Remove(T elem)
         {
-
             var currNode = GetHeadBottomNode();
 
             while (currNode != null)
@@ -90,13 +89,16 @@ namespace lab1.Task2
                     else
                     {
                         rightNode.SetToBeDeleted(false);
+                       
                     }
+                    return true;
                 }
                 else
                 {
                     currNode = currNode.GetLowerNode();
                 }
             }
+            return false;
         }
 
         public bool Contains(T elem) {
@@ -142,69 +144,69 @@ namespace lab1.Task2
         
         return level;
     }
-        
-        private class Node<T> {
-            private T _node;
-            private AtomicReference<Node<T>> _rightNode;
-            private AtomicReference<Node<T>> _lowerNode;
-            private int _height;
-            private bool _toBeDeleted;
+    }
+    
+    public class Node<T> {
+        private T _node;
+        private AtomicReference<Node<T>> _rightNode;
+        private AtomicReference<Node<T>> _lowerNode;
+        private int _height;
+        private bool _toBeDeleted;
 
-            public Node(T node, int height) {
-                _node = node;
-                _rightNode = new AtomicReference<Node<T>>(null);
-                _lowerNode = new AtomicReference<Node<T>>(null);
-                _height = height;
-                _toBeDeleted = false;
-            }
+        public Node(T node, int height) {
+            _node = node;
+            _rightNode = new AtomicReference<Node<T>>(null);
+            _lowerNode = new AtomicReference<Node<T>>(null);
+            _height = height;
+            _toBeDeleted = false;
+        }
 
-            public T GetValue() {
-                return _node;
-            }
+        public T GetValue() {
+            return _node;
+        }
 
-            public void SetValue(T value) {
-                _node = value;
-            }
+        public void SetValue(T value) {
+            _node = value;
+        }
 
-            public Node<T> GetRightNode() {
-                return _rightNode.Value;
-            }
+        public Node<T> GetRightNode() {
+            return _rightNode.Value;
+        }
 
-            public void SetRightNode(Node<T> rightNode) {
-                _rightNode.Set(rightNode);
-            }
+        public void SetRightNode(Node<T> rightNode) {
+            _rightNode.Set(rightNode);
+        }
 
-            public Node<T> GetLowerNode() {
-                return _lowerNode.Value;
-            }
+        public Node<T> GetLowerNode() {
+            return _lowerNode.Value;
+        }
 
-            public void SetLowerNode(Node<T> lowerNode) {
-                _lowerNode.Set(lowerNode);
-            }
+        public void SetLowerNode(Node<T> lowerNode) {
+            _lowerNode.Set(lowerNode);
+        }
 
-            public int GetHeight() {
-                return _height;
-            }
+        public int GetHeight() {
+            return _height;
+        }
 
-            public void SetHeight(int height) {
-                _height = height;
-            }
+        public void SetHeight(int height) {
+            _height = height;
+        }
 
-            public bool IsToBeDeleted() {
-                return _toBeDeleted;
-            }
+        public bool IsToBeDeleted() {
+            return _toBeDeleted;
+        }
 
-            public void SetToBeDeleted(bool toBeDeleted) {
-                _toBeDeleted = toBeDeleted;
-            }
+        public void SetToBeDeleted(bool toBeDeleted) {
+            _toBeDeleted = toBeDeleted;
+        }
 
-            public bool CompareAndSetRightNode(Node<T> expected, Node<T> next) {
-                return !_toBeDeleted && _rightNode.CompareAndExchange(expected, next);
-            }
+        public bool CompareAndSetRightNode(Node<T> expected, Node<T> next) {
+            return !_toBeDeleted && _rightNode.CompareAndExchange(expected, next);
+        }
 
-            public bool CompareAndSetLowerNode(Node<T> expected, Node<T> next) {
-                return _lowerNode.CompareAndExchange(expected, next);
-            }
+        public bool CompareAndSetLowerNode(Node<T> expected, Node<T> next) {
+            return _lowerNode.CompareAndExchange(expected, next);
         }
     }
 }

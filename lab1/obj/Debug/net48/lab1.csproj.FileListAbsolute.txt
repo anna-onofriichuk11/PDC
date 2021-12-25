@@ -1,0 +1,10 @@
+C:\Users\Anna\RiderProjects\PDC\lab1\bin\Debug\net48\lab1.dll
+C:\Users\Anna\RiderProjects\PDC\lab1\bin\Debug\net48\lab1.pdb
+C:\Users\Anna\RiderProjects\PDC\lab1\obj\Debug\net48\lab1.csprojAssemblyReference.cache
+C:\Users\Anna\RiderProjects\PDC\lab1\obj\Debug\net48\lab1.AssemblyInfoInputs.cache
+C:\Users\Anna\RiderProjects\PDC\lab1\obj\Debug\net48\lab1.AssemblyInfo.cs
+C:\Users\Anna\RiderProjects\PDC\lab1\obj\Debug\net48\lab1.csproj.CoreCompileInputs.cache
+C:\Users\Anna\RiderProjects\PDC\lab1\obj\Debug\net48\lab1.dll
+C:\Users\Anna\RiderProjects\PDC\lab1\obj\Debug\net48\lab1.pdb
+C:\Users\Anna\RiderProjects\PDC\lab1\bin\Debug\net48\System.ServiceModel.Primitives.dll
+C:\Users\Anna\RiderProjects\PDC\lab1\obj\Debug\net48\lab1.csproj.CopyComplete

@@ -56,7 +56,7 @@
             }
         }
         
-        public void Remove(int index) {
+        public bool Remove(int index) {
             Node<T> node;
             Node<T> prevNode;
 
@@ -66,7 +66,7 @@
                 if (index == 0) {
                     if (_head.CompareAndExchange(node, node.GetNext())) {
                         _size--;
-                        break;
+                        return true;
                     }
                 }
                 else {
@@ -74,11 +74,12 @@
 
                     if (prevNode.CompareAndSetNext(node, node.GetNext())) {
                         _size--;
-                        break;
+                        return true;
                     }
                 }
 
                 node.SetToBeDeleted(false);
+                return false;
             }
         }
         

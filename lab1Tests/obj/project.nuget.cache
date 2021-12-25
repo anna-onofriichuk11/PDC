@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "GB+GAmmBPJ72Gef+iByXVOexkx0bgz2KvRTQI6hP3D4SlwhfFx5gehx5fbmBpZt2YRCPwa8d+/0XpnHRgOkHsw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Anna\\RiderProjects\\PDC\\lab1Tests\\lab1Tests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anna\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\system.servicemodel.primitives\\4.9.0\\system.servicemodel.primitives.4.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}

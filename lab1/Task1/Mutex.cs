@@ -16,14 +16,14 @@ namespace lab1.Task1
         {
             _waitingThreadList.Add(Thread.CurrentThread);
             
-            this.UnlockThread();
+            UnlockThread();
 
             while (_locked == 0)
             {
                 Thread.Yield();
             }
             
-            this.LockThread();
+            LockThread();
             Interlocked.Exchange(ref _locked, 1);
         }
 
@@ -46,7 +46,7 @@ namespace lab1.Task1
             _waitingThreadList.Clear();
         }
 
-        private void LockThread()
+        public void LockThread()
         {
             Interlocked.Exchange(ref _locked , 1);
             while (Interlocked.CompareExchange(ref _currentThread, Thread.CurrentThread, null) == null)
@@ -55,7 +55,7 @@ namespace lab1.Task1
             }
         }
 
-        private void UnlockThread()
+        public void UnlockThread()
         {
             Interlocked.Exchange(ref _locked, 0);
             Interlocked.Exchange(ref _currentThread, null);
