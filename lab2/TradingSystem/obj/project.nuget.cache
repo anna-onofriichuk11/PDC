@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "Za/8hgkUYxbzEWZGMfwa/+powF8TbSdhNk0NGROZ7sp2tiu+Hq/SgXBdpDGqBHcILFQk5xnq9EFRp2tLA9oa3w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Anna\\RiderProjects\\lab2\\TradingSystem\\TradingSystem.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anna\\.nuget\\packages\\akka\\1.4.29\\akka.1.4.29.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\akka.persistence\\1.4.29\\akka.persistence.1.4.29.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\google.protobuf\\3.17.3\\google.protobuf.3.17.3.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\system.threading.channels\\5.0.0\\system.threading.channels.5.0.0.nupkg.sha512",
+    "C:\\Users\\Anna\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
